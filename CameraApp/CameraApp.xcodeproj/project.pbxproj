@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DBB019B275AECA40063CBB7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5DBB019A275AECA40063CBB7 /* Lottie */; };
+		5DBB019D275AECC60063CBB7 /* selfi.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DBB019C275AECC60063CBB7 /* selfi.json */; };
 		AD72F7462758D42F0070D5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD72F7452758D42F0070D5E0 /* AppDelegate.swift */; };
 		AD72F7482758D42F0070D5E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD72F7472758D42F0070D5E0 /* SceneDelegate.swift */; };
 		AD72F74A2758D42F0070D5E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD72F7492758D42F0070D5E0 /* ViewController.swift */; };
@@ -19,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DBB019C275AECC60063CBB7 /* selfi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = selfi.json; sourceTree = "<group>"; };
 		AD72F7422758D42F0070D5E0 /* CameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD72F7452758D42F0070D5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD72F7472758D42F0070D5E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DBB019B275AECA40063CBB7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +69,7 @@
 				AD72F7452758D42F0070D5E0 /* AppDelegate.swift */,
 				AD72F7472758D42F0070D5E0 /* SceneDelegate.swift */,
 				AD72F7492758D42F0070D5E0 /* ViewController.swift */,
+				5DBB019C275AECC60063CBB7 /* selfi.json */,
 				AD72F7592758D8460070D5E0 /* ViewController2.swift */,
 				AD72F75B2758D8520070D5E0 /* ViewController3.swift */,
 				AD72F7612758EACB0070D5E0 /* ViewController4.swift */,
@@ -92,6 +97,9 @@
 			dependencies = (
 			);
 			name = CameraApp;
+			packageProductDependencies = (
+				5DBB019A275AECA40063CBB7 /* Lottie */,
+			);
 			productName = CameraApp;
 			productReference = AD72F7422758D42F0070D5E0 /* CameraApp.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +128,9 @@
 				Base,
 			);
 			mainGroup = AD72F7392758D42F0070D5E0;
+			packageReferences = (
+				5DBB0199275AECA40063CBB7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = AD72F7432758D42F0070D5E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD72F7522758D4310070D5E0 /* LaunchScreen.storyboard in Resources */,
+				5DBB019D275AECC60063CBB7 /* selfi.json in Resources */,
 				AD72F74F2758D4310070D5E0 /* Assets.xcassets in Resources */,
 				AD72F74D2758D42F0070D5E0 /* Main.storyboard in Resources */,
 			);
@@ -372,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DBB0199275AECA40063CBB7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DBB019A275AECA40063CBB7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DBB0199275AECA40063CBB7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD72F73A2758D42F0070D5E0 /* Project object */;
 }
